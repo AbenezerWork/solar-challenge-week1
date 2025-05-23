@@ -57,7 +57,10 @@ solar-challenge-week1/
 .
 ├── README.md
 ├── app
-│   └── main.py
+│   ├── __pycache__
+│   │   └── utils.cpython-313.pyc
+│   ├── main.py
+│   └── utils.py
 ├── data
 │   ├── benin-malanville_clean.csv
 │   ├── sierraleone-bumbuna_clean.csv
@@ -65,11 +68,14 @@ solar-challenge-week1/
 │   ├── solar-measurements_sierraleone-bumbuna_qc.csv
 │   ├── solar-measurements_togo-dapaong_qc.csv
 │   └── togo-dapaong_clean.csv
-└── notebooks
-    ├── benin-eda.ipynb
-    ├── compare_countries.ipynb
-    ├── sierraleone.ipynb
-    └── togo-eda.ipynb
+├── notebooks
+│   ├── benin-eda.ipynb
+│   ├── compare_countries.ipynb
+│   ├── sierraleone.ipynb
+│   └── togo-eda.ipynb
+└── requirements.txt
+
+5 directories, 15 files
 
 ```
 
