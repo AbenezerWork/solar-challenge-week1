@@ -110,8 +110,9 @@ This project uses the following tools and libraries:
 - **Jupyter Notebooks** – Interactive coding environment
 - **Pandas**, **NumPy** – Data manipulation and numerical operations
 - **Matplotlib**, **Seaborn** – Visualization and plotting libraries
-
+- **streamlit** - dashboard for visualization (link)[[https://10acadamy-week1.streamlit.app/]]
 These tools provide a strong foundation for conducting data analysis and creating insightful visuals.
+
 
 
 
