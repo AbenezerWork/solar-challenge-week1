@@ -1,0 +1,44 @@
+# .github/workflows/ci.yml
+
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10' # Specify the Python version you are using (e.g., 3.9, 3.10, 3.11)
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Check if requirements.txt exists before trying to install
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        else
+          echo "requirements.txt not found. Skipping dependency installation."
+        fi
+
+    - name: Run a basic check (e.g., Python version)
+      run: |
+        python --version
+        echo "Basic CI checks passed!"
+
+    # You can add more steps here, e.g., to run tests or linting
+    # - name: Run tests
+    #   run: |
+    #     pytest # if you have tests and pytest installed
