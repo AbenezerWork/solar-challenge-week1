@@ -14,7 +14,7 @@ This repository contains my analysis of solar energy production across **Benin**
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AbigailF1/solar-challenge-week1.git
+git clone https://github.com/AbenezerWork/solar-challenge-week1.git
 cd solar-challenge-week1
 
 ```
